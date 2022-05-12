@@ -1,3 +1,6 @@
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
+
 # OIS fix
 persist.camera.gyro.android=20
 persist.camera.HAL3.enabled=1
