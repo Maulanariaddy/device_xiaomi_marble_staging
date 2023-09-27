@@ -157,6 +157,9 @@
     <item name="wifi.on">1.35</item>
     <item name="wifi.active">335.55</item>
     <item name="wifi.scan">36.98</item>
+    <item name="audio">21.88</item>
+    <item name="video">34.97</item>
+
 
     <!-- Apps which primarily work with audio or music, such as music players. -->
     <item name="audio">21.88</item>
