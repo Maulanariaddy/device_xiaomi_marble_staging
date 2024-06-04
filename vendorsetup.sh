@@ -3,6 +3,7 @@ echo 'Hello! we need to clone stuffs needed for your device, please wait tll pro
 echo 'Nuke Source stuffs'
 	rm -rf hardware/qcom-caf/sm8450/display
 	rm -rf hardware/xiaomi
+	rm -rf endor/everest/signing/keys
 
 echo 'Cloning Basic Call Recorder Tree'
 	git clone https://github.com/xiaomi-sm8450-marble/android_vendor_bcr -b ursa vendor/bcr
@@ -30,3 +31,6 @@ echo 'Cloning Vendor Tree'
 
 echo 'Cloning Vendor Common Tree'
 	git clone https://github.com/xiaomi-sm8450-marble/android_vendor_xiaomi_sm8450-common -b ursa vendor/xiaomi/sm8450-common
+
+echo 'Cloning Vendor Everest Signing Keys'
+        git clone https://github.com/xiaomi-sm8450-marble/android_vendor_everest_signing_keys -b ursa vendor/everest/signing/keys
