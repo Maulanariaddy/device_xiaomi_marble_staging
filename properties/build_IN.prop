@@ -1,0 +1,5 @@
+# Indian model
+bluetooth.device.default_name=POCO F5
+ro.product.odm.device=marblein
+ro.product.odm.model=23049PCD8I
+ro.product.mod_device=marble_in_global
