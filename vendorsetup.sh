@@ -3,13 +3,12 @@ echo 'Hello! we need to clone stuffs needed for your device, please wait tll pro
 echo 'Nuke Source stuffs'
 	rm -rf hardware/qcom-caf/sm8450/display
 	rm -rf hardware/xiaomi
-	rm -rf endor/everest/signing/keys
 
 echo 'Cloning Basic Call Recorder Tree'
 	git clone https://github.com/xiaomi-sm8450-marble/android_vendor_bcr -b ursa vendor/bcr
 
 echo 'Cloning Device Common Tree'
-	git clone https://github.com/xiaomi-sm8450-marble/android_device_xiaomi_sm8450-common -b ursa device/xiaomi/sm8450-common
+	git clone https://github.com/Maulanariaddy/device_xiaomi_marble_sm8450_common.git -b blaze device/xiaomi/sm8450-common
 
 echo 'Cloning MemeCamera Tree'
 	git clone https://github.com/xiaomi-sm8450-marble/android_device_xiaomi_miuicamera-marble.git -b ursa device/xiaomi/miuicamera-marble
@@ -27,10 +26,7 @@ echo 'Cloning Kernel Tree'
 	git clone --depth=1 https://github.com/xiaomi-sm8450-marble/android_kernel_xiaomi_sm8450-devicetrees -b ursa kernel/xiaomi/sm8450-devicetrees
 
 echo 'Cloning Vendor Tree'
-	git clone https://github.com/xiaomi-sm8450-marble/android_vendor_xiaomi_marble -b ursa vendor/xiaomi/marble
+	git clone https://github.com/Maulanariaddy/vendor_xiaomi_marble.git -b blaze vendor/xiaomi/marble
 
 echo 'Cloning Vendor Common Tree'
-	git clone https://github.com/xiaomi-sm8450-marble/android_vendor_xiaomi_sm8450-common -b ursa vendor/xiaomi/sm8450-common
-
-echo 'Cloning Vendor Everest Signing Keys'
-        git clone https://github.com/xiaomi-sm8450-marble/android_vendor_everest_signing_keys -b ursa vendor/everest/signing/keys
+	git clone https://github.com/Maulanariaddy/vendor_xiaomi_sm8450_common -b blaze vendor/xiaomi/sm8450-common

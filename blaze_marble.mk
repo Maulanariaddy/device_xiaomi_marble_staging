@@ -7,14 +7,14 @@
 # Inherit from marble device
 $(call inherit-product, device/xiaomi/marble/device.mk)
 
-# Inherit from common Everest configuration
-$(call inherit-product, vendor/everest/config/common_full_phone.mk)
+# Inherit from common Blaze configuration
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
 # Device identifier
 PRODUCT_BRAND := POCO
 PRODUCT_DEVICE := marble
 PRODUCT_MODEL := 23049PCD8G
-PRODUCT_NAME := everest_marble
+PRODUCT_NAME := blaze_marble
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_SYSTEM_NAME := marble_global
@@ -32,10 +32,13 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Everest stuff
 WITH_GAPPS := true
 TARGET_SUPPORTS_BLUR := true
-TARGET_INCLUDE_LAUNCHER3 := true
 TARGET_BOOT_ANIMATION_RES := 1440
-TARGET_INCLUDE_PIXEL_LAUNCHER := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Maintainer stuff
-EVEREST_BUILD_TYPE := Official
-EVEREST_MAINTAINER := SharmagRit
+EVEREST_BUILD_TYPE := COMMUNITY
+EVEREST_MAINTAINER := Maul's
