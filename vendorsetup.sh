@@ -8,7 +8,7 @@ echo 'Cloning Basic Call Recorder Tree'
 	git clone https://github.com/xiaomi-sm8450-marble/android_vendor_bcr -b ursa vendor/bcr
 
 echo 'Cloning Device Common Tree'
-	git clone https://github.com/xiaomi-sm8450-marble/android_device_xiaomi_sm8450-common -b ursa device/xiaomi/sm8450-common
+	git clone https://github.com/xiaomi-sm8450-marble/android_device_xiaomi_sm8450-common -b mist device/xiaomi/sm8450-common
 
 echo 'Cloning MemeCamera Tree'
 	git clone https://github.com/xiaomi-sm8450-marble/android_device_xiaomi_miuicamera-marble.git -b ursa device/xiaomi/miuicamera-marble
@@ -21,9 +21,9 @@ echo 'Cloning Hardware Xiaomi Tree'
 	git clone https://github.com/xiaomi-sm8450-marble/android_hardware_xiaomi -b ursa hardware/xiaomi
 
 echo 'Cloning Kernel Tree'
-	git clone --depth=1 https://github.com/xiaomi-sm8450-marble/android_kernel_xiaomi_sm8450 -b ursa kernel/xiaomi/sm8450
-	git clone --depth=1 https://github.com/xiaomi-sm8450-marble/android_kernel_xiaomi_sm8450-modules -b ursa kernel/xiaomi/sm8450-modules
-	git clone --depth=1 https://github.com/xiaomi-sm8450-marble/android_kernel_xiaomi_sm8450-devicetrees -b ursa kernel/xiaomi/sm8450-devicetrees
+	git clone --depth=1 --recursive https://github.com/poco-f5-mable/android_kernel_xiaomi_sm8450 -b lineage-21 kernel/xiaomi/sm8450
+	git clone --depth=1 --recursive https://github.com/poco-f5-mable/android_kernel_xiaomi_sm8450-modules.git -b lineage-21 kernel/xiaomi/sm8450-modules
+	git clone --depth=1 --recursive https://github.com/poco-f5-mable/android_kernel_xiaomi_sm8450-devicetrees -b lineage-21 kernel/xiaomi/sm8450-devicetrees
 
 echo 'Cloning Vendor Tree'
 	git clone https://github.com/xiaomi-sm8450-marble/android_vendor_xiaomi_marble -b ursa vendor/xiaomi/marble
