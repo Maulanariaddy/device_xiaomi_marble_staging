@@ -6,4 +6,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">false</bool>
+
+    <!-- Determines whether the shell features all run on another thread. This is to be overrided
+         by the resources of the app using the Shell library. -->
+    <bool name="config_enableShellMainThread">true</bool>
 </resources>
