@@ -7,14 +7,14 @@
 # Inherit from marble device
 $(call inherit-product, device/xiaomi/marble/device.mk)
 
-# Inherit from common Everest configuration
-$(call inherit-product, vendor/everest/config/common_full_phone.mk)
+# Inherit from common mist os configuration
+$(call inherit-product, vendor/mist/config/common_full_phone.mk)
 
 # Device identifier
 PRODUCT_BRAND := POCO
 PRODUCT_DEVICE := marble
 PRODUCT_MODEL := 23049PCD8G
-PRODUCT_NAME := everest_marble
+PRODUCT_NAME := mist_marble
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_SYSTEM_NAME := marble_global
@@ -30,11 +30,15 @@ BUILD_FINGERPRINT := POCO/marble_global/marble:14/UKQ1.230804.001/V816.0.8.0.UMR
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Everest stuff
-WITH_GAPPS := true
+WITH_GAPPS := false
 TARGET_SUPPORTS_BLUR := true
-TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_LAUNCHER := false
+MIST_CHIPSET := SM7475
+MIST_BATTERY := 5000mah
+MIST_DISPLAY := 1080x2400
+TARGET_DISABLE_EPPE := true
 
 # Maintainer stuff
-EVEREST_BUILD_TYPE := Official
-EVEREST_MAINTAINER := SharmagRit
+MIST_BUILD_TYPE := UNOFFICIAL
+MIST_MAINTAINER := Mauls
